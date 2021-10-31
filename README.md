@@ -518,7 +518,7 @@ for (int i = 0; i <= 6; i++) {
  //----------------------------------- ADIM 11
 
 
-white_blink();
+//white_blink();
 
 
 //------------------------------------- ADIM 12
@@ -745,7 +745,8 @@ for (int i = 0; i <= 30; i++) {
 
 
 //------------------------------------ ADIM 13
-       
+ 
+white_blink();      
    
 for (int i = 0; i <= 6; i++) {
 
@@ -763,12 +764,21 @@ for (int i = 0; i <= 6; i++) {
               
      for (int i = 0; i <= 3; i++) {
       
-        for (int i = 0; i <= 1; i++) {
+        for (int i = 0; i <= 12; i++) {
         leds[i] = CRGB::White; 
         FastLED.show();  
         }
         FastLED.clear ();
      }
+
+      for (int i = 0; i <= 3; i++) {
+      
+          for (int i = 0; i <= 12; i++) {
+          leds[i] = CRGB::Blue; 
+          FastLED.show();  
+          }
+          FastLED.clear ();
+      }
 }
 
 
