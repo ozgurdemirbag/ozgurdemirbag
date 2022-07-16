@@ -1,6 +1,6 @@
 //--Özgür Demirbağ
 //--Ozgur_Led12_2022
-//--14/07/2022
+//--16/07/2022
 //-- This is made for home alarm. Cannot be used outside
 //--Bu ev alarmı için yapılmıştır. Dışarıda kullanılamaz
 
@@ -9,8 +9,8 @@
 #include "colorpalettes.h"
 #define __INC_COLORPALETTES_H
 #define FASTLED_INTERNAL
-#define LED_PIN     2
-#define NUM_LEDS    12
+#define LED_PIN  2
+#define NUM_LEDS 12
 
 int strobo_0 = 5;
 int strobo_1 = 10;
@@ -448,7 +448,6 @@ for (int i = 0; i <= 3; i++) {
 }}
 
 void pattern_2()  {
-
   for (int i = 0; i <= 3; i++) {  
     
     leds[0]=CRGB::Red;
@@ -511,7 +510,6 @@ for (int i = 0; i <= 3; i++) {
 }}
 
 void S11() {
-
 for (int i = 0; i <= 3; i++) {
 
   leds[0]=CRGB::Red;
@@ -1136,7 +1134,6 @@ for (int i = 0; i <= 11; i++) {
           leds[10] = CRGB::Blue;
           leds[11] = CRGB::Blue;
           
-
     FastLED.show();
     delay(strobo_0);
     }  
@@ -1277,7 +1274,6 @@ for (int i = 0; i <= 11; i++) {
           delay(strobo_1);    
           }
           FastLED.clear ();  
-
 
 }}
 
